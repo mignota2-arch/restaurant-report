@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YEGNA KURS BET</title>
+  <style>
+    :root{
+      --accent:#c94f2a;
+      --bg:#faf7f3;
+      --panel:#ffffff;
+      --muted:#666;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:#222;
+      line-height:1.4;
+    }
+    .site-header{
+      background:var(--accent);
+      color:#fff;
+      padding:1rem;
+      text-align:center;
+    }
+    .site-header .tagline{opacity:0.95;margin:0.25rem 0 0;font-weight:600}
+    .three-panel{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1rem;
+      padding:1rem;
+      max-width:1100px;
+      margin:1rem auto;
+    }
+    .panel{
+      background:var(--panel);
+      border-radius:8px;
+      padding:1rem;
+      box-shadow:0 2px 6px rgba(0,0,0,0.06);
+      min-height:220px;
+    }
+    .panel h2{color:var(--accent);margin-top:0}
+    .item-list{list-style:none;padding:0;margin:0}
+    .item-list li{padding:0.5rem 0;border-bottom:1px dashed #eee}
+    .item-list li:last-child{border-bottom:0}
+    .desc{color:var(--muted);font-size:0.95rem}
+    .site-footer{text-align:center;padding:1rem;color:var(--muted)}
+    @media (max-width:900px){
+      .three-panel{grid-template-columns:1fr; padding:0.5rem}
+      .panel{min-height:auto}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>YEGNA KURS BET</h1>
+    <p class="tagline">Drinkings · Food · Our Service</p>
+  </header>
+
+  <main class="three-panel">
+    <section id="drinkings" class="panel">
+      <h2>Drinkings</h2>
+      <ul class="item-list">
+        <li><strong>Traditional Coffee</strong><br/><span class="desc">Freshly roasted, served with popcorn.</span></li>
+        <li><strong>Tea</strong><br/><span class="desc">Spiced or plain.</span></li>
+        <li><strong>Fresh Juices</strong><br/><span class="desc">Seasonal fruits.</span></li>
+      </ul>
+    </section>
+
+    <section id="food" class="panel">
+      <h2>Food</h2>
+      <ul class="item-list">
+        <li><strong>Injera & Stew</strong><br/><span class="desc">Classic combos.</span></li>
+        <li><strong>Sandwiches</strong><br/><span class="desc">Quick bites.</span></li>
+        <li><strong>Vegetarian Plates</strong><br/><span class="desc">Healthy options.</span></li>
+      </ul>
+    </section>
+
+    <section id="service" class="panel">
+      <h2>Our Service</h2>
+      <p>Friendly staff, fast delivery, catering for events. We welcome feedback to improve.</p>
+      <button id="feedbackBtn">Leave Feedback</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> YEGNA KURS BET</p>
+  </footer>
+
+  <script>
+    // Show current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Feedback button interaction
+    const feedbackBtn = document.getElementById('feedbackBtn');
+    feedbackBtn.addEventListener('click', () => {
+      const name = prompt('Your name (optional):');
+      const msg = prompt('Share a short feedback or suggestion:');
+      if(msg && msg.trim()){
+        alert('Thanks for your feedback! We appreciate it.');
+        console.log('Feedback from', name || 'Anonymous', ':', msg);
+      } else {
+        alert('No feedback submitted.');
+      }
+    });
+  </script>
+</body>
+</html>
