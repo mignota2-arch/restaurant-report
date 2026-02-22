@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>yegna kurs bet </title>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .food { width: 33%; background: #f9f9f9; }
+    .drinks { width: 53%; background: #eef; }
+    .services { width: 34%; background: #efe; }
+    h2 { margin-top: 0; }
+    .rating {
+      display: flex;
+      gap: 5px;
+      margin: 5px 0 15px 0;
+    }
+    .rating button {
+      padding: 5px 10px;
+      border: 1px solid #333;
+      background: #fff;
+      cursor: pointer;
+    }
+    .rating button:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Food Section -->
+  <div class="section food">
+    <h2>Food</h2>
+    <p>Rate menu items:</p>
+
+    <!-- Ethiopian Foods -->
+    <div><strong>Injera</strong>
+      <div class="rating">
+        <button onclick="rate('Injera',1)">1</button>
+        <button onclick="rate('Injera',2)">2</button>
+        <button onclick="rate('Injera',3)">3</button>
+        <button onclick="rate('Injera',4)">4</button>
+        <button onclick="rate('Injera',5)">5</button>
+      </div>
+    </div>
+
+    <div><strong>Teff</strong>
+      <div class="rating">
+        <button onclick="rate('Teff',1)">1</button>
+        <button onclick="rate('Teff',2)">2</button>
+        <button onclick="rate('Teff',3)">3</button>
+        <button onclick="rate('Teff',4)">4</button>
+        <button onclick="rate('Teff',5)">5</button>
+      </div>
+    </div>
+
+    <div><strong>Beyaynetu</strong>
+      <div class="rating">
+        <button onclick="rate('Beyaynetu',1)">1</button>
+        <button onclick="rate('Beyaynetu',2)">2</button>
+        <button onclick="rate('Beyaynetu',3)">3</button>
+        <button onclick="rate('Beyaynetu',4)">4</button>
+        <button onclick="rate('Beyaynetu',5)">5</button>
+      </div>
+    </div>
+
+   <div><strong>Shiro</strong>
+  <div class="rating">
+    <button onclick="rate('Shiro',1)">1</button>
+    <button onclick="rate('Shiro',2)">2</button>
+    <button onclick="rate('Shiro',3)">3</button>
+    <button onclick="rate('Shiro',4)">4</button>
+    <button onclick="rate('Shiro',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Doro Wat</strong>
+  <div class="rating">
+    <button onclick="rate('Doro Wat',1)">1</button>
+    <button onclick="rate('Doro Wat',2)">2</button>
+    <button onclick="rate('Doro Wat',3)">3</button>
+    <button onclick="rate('Doro Wat',4)">4</button>
+    <button onclick="rate('Doro Wat',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Kitfo</strong>
+  <div class="rating">
+    <button onclick="rate('Kitfo',1)">1</button>
+    <button onclick="rate('Kitfo',2)">2</button>
+    <button onclick="rate('Kitfo',3)">3</button>
+    <button onclick="rate('Kitfo',4)">4</button>
+    <button onclick="rate('Kitfo',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Tibs</strong>
+  <div class="rating">
+    <button onclick="rate('Tibs',1)">1</button>
+    <button onclick="rate('Tibs',2)">2</button>
+    <button onclick="rate('Tibs',3)">3</button>
+    <button onclick="rate('Tibs',4)">4</button>
+    <button onclick="rate('Tibs',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Firfir</strong>
+  <div class="rating">
+    <button onclick="rate('Firfir',1)">1</button>
+    <button onclick="rate('Firfir',2)">2</button>
+    <button onclick="rate('Firfir',3)">3</button>
+    <button onclick="rate('Firfir',4)">4</button>
+    <button onclick="rate('Firfir',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Genfo</strong>
+  <div class="rating">
+    <button onclick="rate('Genfo',1)">1</button>
+    <button onclick="rate('Genfo',2)">2</button>
+    <button onclick="rate('Genfo',3)">3</button>
+    <button onclick="rate('Genfo',4)">4</button>
+    <button onclick="rate('Genfo',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Azifa</strong>
+  <div class="rating">
+    <button onclick="rate('Azifa',1)">1</button>
+    <button onclick="rate('Azifa',2)">2</button>
+    <button onclick="rate('Azifa',3)">3</button>
+    <button onclick="rate('Azifa',4)">4</button>
+    <button onclick="rate('Azifa',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Gomen</strong>
+  <div class="rating">
+    <button onclick="rate('Gomen',1)">1</button>
+    <button onclick="rate('Gomen',2)">2</button>
+    <button onclick="rate('Gomen',3)">3</button>
+    <button onclick="rate('Gomen',4)">4</button>
+    <button onclick="rate('Gomen',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Alicha</strong>
+  <div class="rating">
+    <button onclick="rate('Alicha',1)">1</button>
+    <button onclick="rate('Alicha',2)">2</button>
+    <button onclick="rate('Alicha',3)">3</button>
+    <button onclick="rate('Alicha',4)">4</button>
+    <button onclick="rate('Alicha',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Menchet Abish</strong>
+  <div class="rating">
+    <button onclick="rate('Menchet Abish',1)">1</button>
+    <button onclick="rate('Menchet Abish',2)">2</button>
+    <button onclick="rate('Menchet Abish',3)">3</button>
+    <button onclick="rate('Menchet Abish',4)">4</button>
+    <button onclick="rate('Menchet Abish',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Chechebsa</strong>
+  <div class="rating">
+    <button onclick="rate('Chechebsa',1)">1</button>
+    <button onclick="rate('Chechebsa',2)">2</button>
+    <button onclick="rate('Chechebsa',3)">3</button>
+    <button onclick="rate('Chechebsa',4)">4</button>
+    <button onclick="rate('Chechebsa',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Ayib</strong>
+  <div class="rating">
+    <button onclick="rate('Ayib',1)">1</button>
+    <button onclick="rate('Ayib',2)">2</button>
+    <button onclick="rate('Ayib',3)">3</button>
+    <button onclick="rate('Ayib',4)">4</button>
+    <button onclick="rate('Ayib',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Dulet</strong>
+  <div class="rating">
+    <button onclick="rate('Dulet',1)">1</button>
+    <button onclick="rate('Dulet',2)">2</button>
+    <button onclick="rate('Dulet',3)">3</button>
+    <button onclick="rate('Dulet',4)">4</button>
+    <button onclick="rate('Dulet',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Fasolia Misir Wat</strong>
+  <div class="rating">
+    <button onclick="rate('Fasolia Misir Wat',1)">1</button>
+    <button onclick="rate('Fasolia Misir Wat',2)">2</button>
+    <button onclick="rate('Fasolia Misir Wat',3)">3</button>
+    <button onclick="rate('Fasolia Misir Wat',4)">4</button>
+    <button onclick="rate('Fasolia Misir Wat',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Quanta Firfir</strong>
+  <div class="rating">
+    <button onclick="rate('Quanta Firfir',1)">1</button>
+    <button onclick="rate('Quanta Firfir',2)">2</button>
+    <button onclick="rate('Quanta Firfir',3)">3</button>
+    <button onclick="rate('Quanta Firfir',4)">4</button>
+    <button onclick="rate('Quanta Firfir',5)">5</button>
+  </div>
+</div>
+
+<div><strong>Enkulal Firfir</strong>
+  <div class="rating">
+    <button onclick="rate('Enkulal Firfir',1)">
+
+  <!-- Drinks Section -->
+  <div class="section drinks">
+    <h2>Drinks (53%)</h2>
+    <p>Rate soft/normal drinks:</p>
+    <div class="rating">
+      <button onclick="rate('Drinks',1)">1</button>
+      <button onclick="rate('Drinks',2)">2</button>
+      <button onclick="rate('Drinks',3)">3</button>
+      <button onclick="rate('Drinks',4)">4</button>
+      <button onclick="rate('Drinks',5)">5</button>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section services">
+    <h2>Services (34%)</h2>
+    <p>Rate service quality:</p>
+    <div class="rating">
+      <button onclick="rate('Services',1)">1</button>
+      <button onclick="rate('Services',2)">2</button>
+      <button onclick="rate('Services',3)">3</button>
+      <button onclick="rate('Services',4)">4</button>
+      <button onclick="rate('Services',5)">5</button>
+    </div>
+  </div>
+
+  <script>
+    function rate(item, value) {
+      alert(item + " rated: " + value);
+      // Replace alert with backend/database saving logic
+    }
+  </script>
+</body>
+</html>
